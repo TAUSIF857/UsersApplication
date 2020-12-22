@@ -1,0 +1,37 @@
+<h2>Users-List</h2>
+<div class="row">
+<div class="col-md-8">
+<table class="table table-responsive table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>
+               Name
+            </th>
+            <th>
+                Birth Date
+             </th>
+             <th>
+                Languages
+             </th>
+             <th>
+                Gender
+             </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let us of users">
+            <td>{{us.name}}</td>
+            <td>{{us.birthDate}}</td>
+            <td>{{us.languages}}</td>
+            <td>{{us.gender}}</td>
+        </tr>
+    </tbody>
+</table>
+<button class="form-control" (click)="addUser()">Add User</button>
+</div>
+<div class="col-md-4">
+<label>List Progress</label><br>
+<label>Female Users</label><br>
+<label>Male Users</label><br>
+</div>
+</div>
